@@ -1,0 +1,54 @@
+@use 'base/variables' as v;
+
+.texto-contacto{
+    margin-bottom: 7rem;
+
+    span{
+        font-family: v.$fuenteParrafos1;
+        line-height: 38px;
+        color: #7D8D9B;
+        font-weight: 400;
+        font-size: 2.4rem;
+    }
+
+    h2{
+        font-family: v.$fuenteHeading;
+        font-weight: 600;
+        color: v.$telling_black;
+        line-height: 5.5rem;
+    }
+}
+
+.image{
+    width: 50% !important; 
+}
+
+@media (max-width: 567px) {
+    .padding-lateral{
+        padding: 0 4rem 0 4rem;
+    }
+
+    .image{
+        width: 87% !important;
+        top: 15rem;
+    }
+}
+
+@media (max-width: 495px) {
+    .texto-contacto{
+
+        h2{
+            font-size: 3.5rem;
+        }
+
+        span{
+            font-size: 1.9rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .section-active{
+        border-bottom:3px solid transparent;
+    }
+}

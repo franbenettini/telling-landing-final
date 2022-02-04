@@ -1,0 +1,196 @@
+@use 'base/variables' as v;
+
+.background{
+    background-color: v.$telling_black;
+}
+
+.team-quote{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15rem 0;
+    margin-right:20vw;
+    margin-left: 20vw;
+
+    span{
+        font-size: 4rem;
+        font-family: v.$fuenteParrafos1;
+        font-weight: 400;
+        color: v.$telling_white;
+        text-align: center;
+        line-height: 5rem;
+    }
+}
+
+.team-members{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 17rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+.item-member{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 -3rem;
+
+    img{
+        width: 70%;
+    }
+
+    .name{
+        color: v.$telling_white;
+        font-weight: 600;
+        font-family: v.$fuenteHeading;
+        margin-top: 2rem;
+    }
+    
+    .position{
+        color: v.$telling_white;
+        font-weight: 400;
+        font-family: v.$fuenteHeading;
+    }
+}
+
+.name-position{
+    margin-top: 2rem;
+}
+
+
+.logo-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 10%;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .team-members{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item-member{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
+    .text-cover{
+
+        h2{
+            font-size: 3.3rem;
+            line-height: 4rem;
+        }
+
+        span{
+            font-size: 2.3rem;
+        }
+    }
+
+    .team-quote{
+
+        span{
+            font-size: 3.3rem;
+        }
+    }
+
+    .team-members{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-member{
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .text-cover{
+
+        h2{
+            font-size: 3.3rem;
+            line-height: 4rem;
+        }
+
+        span{
+            font-size: 2.3rem;
+        }
+    }
+
+    .team-quote{
+
+        span{
+            font-size: 3.3rem;
+        }
+    }
+
+    .team-members{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-member{
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 499px) {
+
+    .team-quote{
+
+        span{
+            font-size: 2.6rem;
+        }
+    }
+
+    .text-cover{
+
+        h2{
+            font-size: 2.6rem;
+            line-height: 4rem;
+        }
+
+        span{
+            font-size: 1.6rem;
+        }
+    }
+
+    .team-members{
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .item-member{
+        margin-top: 3.5rem;
+
+        img{
+            width: 55%;
+        }
+
+        .name{
+            font-size: 1.2rem;
+        }
+
+        .position{
+            font-size: 1.2rem;
+        }
+    }
+
+    .logo-team{
+        width: 15%;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-active{
+        border-bottom:3px solid transparent;
+    }
+}

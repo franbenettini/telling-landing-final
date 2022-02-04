@@ -1,0 +1,32 @@
+@use 'base/variables' as v;
+
+.background2{
+    width: 100%;
+    background-color: v.$telling_black;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15rem 0;
+}
+
+.style-content{
+    color: v.$telling_white;
+    font-family: v.$fuenteHeading;
+    font-weight: 600;
+    font-size: 4.7rem;
+    line-height: 6.5rem;
+    text-align: center;
+}
+
+.style-content2{
+    color: v.$telling_white;
+    font-family: v.$fuenteParrafos1;
+    font-weight: bold;
+    font-size: 4.7rem;
+    line-height: 6.5rem;
+    text-align: center;
+}

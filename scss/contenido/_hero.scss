@@ -1,0 +1,213 @@
+@use 'base/variables' as v;
+
+.contenedor-item{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.item{
+    padding-top: 10rem;
+    width: 50%;
+}
+
+.gradient-right{
+    background-color:#1E8BE8;
+    background-image: url(../img/letters.png), linear-gradient(45deg, rgba(8,75,191,1) 0%, rgba(0,137,255,1) 35%, rgba(30,139,232,1) 100%);
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{  
+        position: relative;
+        width:700px;
+    }
+}
+
+.gradient-left{
+    background: v.$telling_white;
+}
+
+.texto-index p {
+    font-family: v.$fuenteParrafos1;
+    font-weight: 400;
+    color: #7D8D9B;
+}
+
+.contenedor-left{
+    padding: 0 10rem 0 10rem;
+    margin-top: 15rem;
+}
+
+.form-index{
+    margin: 5rem 0;
+}
+
+@media screen and  (max-width: 576px){
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and  (max-width: 777px){
+    .item{
+        padding-top: 0;
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+    .texto-index p{
+        text-align: center;
+    }
+    .form-index-phone{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+
+        .telling-input{
+            width: 100%;
+            margin-right: 0rem;
+        }
+    }
+
+    .partners{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .gradient-right img{
+        position: relative;
+        width: 70%;
+    }
+
+    .gradient-left{
+        margin-bottom: 16rem;
+    }
+
+    #img-bottom{
+        width:75%;
+        bottom: 10rem;
+    }
+}
+
+
+
+@media screen and (min-width: 778px) and (max-width: 1200px){
+    .item{
+        padding-top: 0;
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+    .texto-index p{
+        text-align: center;
+    }
+    .form-index-phone{
+        display: flex;
+        justify-content: center;
+    }
+    .partners{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #img-bottom{
+        position: relative;
+        width: 65%;
+        bottom: 15rem;
+    }
+
+    .gradient-left{
+        margin-bottom: 30rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px)  {
+    .texto-index h1{
+        font-size: 3.9rem;
+    }
+    .texto-index p{
+        font-size: 1.7rem;
+    }
+    .form-index-phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .telling-input{
+            width: 100%;
+            margin-right: 0rem;
+        }
+    }
+
+}
+
+@media (max-width: 499px) {
+
+    .texto-index {
+
+        h1{
+            font-size: 2.6rem;
+            text-align: left;
+        }
+        p {
+            font-size: 1.4rem;
+            text-align: left;
+        }
+    }
+    
+    .contenedor-left {
+        padding: 0 4rem 0 4rem;
+        margin-top: 15rem;
+    }
+
+    .form-index-phone{
+
+        .telling-input{
+            width: 90%;
+            margin-right: 0rem;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+        }
+    }
+
+    .gradient-left{
+        margin-bottom: 16rem;
+    }
+
+    #img-bottom{
+        width:80%;
+        bottom: 10rem;
+    }
+
+    .primary-button{
+        margin-top: 1.5rem;
+    }
+
+    /*Agregar al scss correspondiente */
+    .contenido {
+        margin: 0 4rem;
+
+        span {
+            font-size: 2.4rem;
+            line-height: 0.1rem;
+        }
+    }
+
+}
+

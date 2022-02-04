@@ -1,0 +1,70 @@
+@use 'base/variables' as v;
+
+.not-found{
+    display: flex;
+    margin-top: 20rem;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1{
+        color: v.$telling_black;
+        font-size: 12rem;
+        font-family: v.$fuenteParrafos1;
+        margin: 2rem 0 2.5rem 0;
+    }
+
+    h2{
+        color: v.$telling_black;
+        font-family: v.$fuenteParrafos1;
+        font-size: 3.4rem;
+        margin: 0 6rem;
+    }
+
+    a{
+        margin-top: 4rem;
+        color: v.$telling_white;
+    }
+
+    img{
+        width: 12%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .not-found{
+        img{
+            width: 20%;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .not-found{
+        img{
+            width: 35%;
+        }
+
+        h1{
+            font-size: 10rem;
+        }
+
+        h2{
+            font-size: 2.3rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
