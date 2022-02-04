@@ -1257,13 +1257,13 @@ img {
 }
 
 .gradient-left {
-  background: green;
+  background: white;
 }
 
 .texto-index p {
   font-family: "Merriweather", serif;
   font-weight: 400;
-  color: black;
+  color: #7D8D9B;
 }
 
 .contenedor-left {
