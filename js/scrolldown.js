@@ -19,4 +19,10 @@ $(document).ready(function(){
     $('.navbar-nav>li>a').on('click', function(){
         $('.navbar-collapse').collapse('hide');
     });
+
+    //Funcionalidad menu Hamburguesa
+    $('.navbar-toggler').click(function() {
+        $('.hamburger').toggleClass("is-active");
+    });
 });
+
