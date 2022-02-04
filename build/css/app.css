@@ -1263,7 +1263,7 @@ img {
 .texto-index p {
   font-family: "Merriweather", serif;
   font-weight: 400;
-  color: #7D8D9B;
+  color: black;
 }
 
 .contenedor-left {
@@ -1419,15 +1419,6 @@ img {
   .primary-button {
     margin-top: 1.5rem;
   }
-
-  /*Agregar al scss correspondiente */
-  .contenido {
-    margin: 0 4rem;
-  }
-  .contenido span {
-    font-size: 2.4rem;
-    line-height: 0.1rem;
-  }
 }
 .somos-telling {
   background-image: url(../img/somos\ telling.png);
@@ -1561,4 +1552,14 @@ img {
   font-size: 4.7rem;
   line-height: 6.5rem;
   text-align: center;
+}
+
+@media (max-width: 499px) {
+  .contenido {
+    margin: 0 4rem;
+  }
+  .contenido span {
+    font-size: 2.4rem;
+    line-height: 0.1rem;
+  }
 }

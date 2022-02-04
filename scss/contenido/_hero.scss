@@ -37,7 +37,7 @@
 .texto-index p {
     font-family: v.$fuenteParrafos1;
     font-weight: 400;
-    color: #7D8D9B;
+    color: black;
 }
 
 .contenedor-left{
@@ -197,16 +197,6 @@
 
     .primary-button{
         margin-top: 1.5rem;
-    }
-
-    /*Agregar al scss correspondiente */
-    .contenido {
-        margin: 0 4rem;
-
-        span {
-            font-size: 2.4rem;
-            line-height: 0.1rem;
-        }
     }
 
 }
