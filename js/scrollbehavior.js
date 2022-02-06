@@ -12,12 +12,12 @@ function scrollinparalax(){
             $('.navbar-index').css('background-color','#FFFFFF');
             $('#navbar').addClass('fixed-top');
             $('#nav-bar-cta').css('background-color','#1E8BE8');
-        };
+        }; 
         if (windowscroll  <= 110){
             $('.navbar-index').css('background-color','transparent')
             $('#navbar').removeClass('fixed-top');
             $('#nav-bar-cta').css('background-color','#2C3944');
-        };  
+        };
     };
     if (windowwidth <= 750){
         if (windowscroll  > 150){
