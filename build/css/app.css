@@ -351,11 +351,10 @@ body {
   font-family: "Merriweather", serif;
   font-size: 1.6rem;
   line-height: 2;
-  width: 100%;
 }
 
 .contenedor {
-  width: min(90%, 120rem);
+  width: min(100%, 120rem);
   margin: 0 auto;
 }
 
