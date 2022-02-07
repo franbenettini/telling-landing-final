@@ -351,6 +351,7 @@ body {
   font-family: "Merriweather", serif;
   font-size: 1.6rem;
   line-height: 2;
+  width: 100%;
 }
 
 .contenedor {
@@ -1453,10 +1454,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.center .primary-button {
-  margin: 2rem 0 2rem 0;
 }
 
 @media (min-width: 576px) and (max-width: 1199px) {
