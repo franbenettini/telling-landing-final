@@ -36,6 +36,18 @@
     cursor:pointer;
 }
 
+// Boton Negro
+
+.primary-button-black{
+    color: v.$telling_white;
+    background-color: v.$telling_black;
+    font-family: v.$fuenteParrafos2;
+    border-radius: 25px;
+    white-space: nowrap;
+    padding: 1.4rem 3rem;
+    text-align: center;
+    border:1px solid transparent;
+}
 
 //Campo de mail
 .telling-input:hover{

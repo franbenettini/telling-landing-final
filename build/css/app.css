@@ -449,6 +449,17 @@ img {
   cursor: pointer;
 }
 
+.primary-button-black {
+  color: white;
+  background-color: #2C3944;
+  font-family: "Heebo", sans-serif;
+  border-radius: 25px;
+  white-space: nowrap;
+  padding: 1.4rem 3rem;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
 .telling-input:hover, .telling-input-footer:hover {
   border: 1px solid #1E8BE8;
   cursor: pointer;
