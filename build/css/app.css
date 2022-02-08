@@ -351,6 +351,7 @@ body {
   font-family: "Merriweather", serif;
   font-size: 1.6rem;
   line-height: 2;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -712,6 +713,7 @@ img {
 }
 .background {
   background-color: #2C3944;
+  overflow: hidden;
 }
 
 .team-quote {
