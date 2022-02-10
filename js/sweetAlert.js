@@ -1,9 +1,5 @@
 
-import swal from 'sweetalert';
 
-
-$(document).ready(function(){
-    const showAlert = () =>{
-        swal("Hello world!");
-    };
+$("#nav-bar-cta").click(function(){
+    swal.fire("Ejemplo basico de Sweet alert 2");
 });
