@@ -21,6 +21,7 @@
     "sass": "^1.43.4"
   },
   "dependencies": {
-    "hamburgers": "^1.1.3"
+    "hamburgers": "^1.1.3",
+    "sweetalert": "^2.1.2"
   }
 }
