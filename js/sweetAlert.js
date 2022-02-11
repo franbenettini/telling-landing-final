@@ -1,4 +1,4 @@
-const { default: swal } = require("sweetalert");
+const { default: swal } = require("sweetalert2");
 
 function sweet(){
     Swal.fire({
