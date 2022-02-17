@@ -103,6 +103,8 @@
                             <!--End mc_embed_signup-->
                     <div class="form-index">
                         <form class="form-index-phone" action="https://formsubmit.co/franbenettini@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="">
                             <input class="telling-input" type="email" name="email" placeholder="Ingresá tu Email" id="email">
                             <button class="primary-button">Obtené tu early access</button>
                         </form>
@@ -287,20 +289,18 @@
                         <span>¡Queremos conocerte y resolver tus dudas!</span>      
                     </div>
                     <div>
-                        <form class="col-12 d-flex justify-content-end align-content-start flex-wrap" action="https://formsubmit.co/franbenettini@gmail.com" method="POST">
+                        <form class="col-12 d-flex justify-content-end align-content-start flex-wrap formulario" id="form">
                             <div class="col-12">
                                 <div class="col-12 mb-3 d-flex justify-content-between align-content-start flex-wrap">
-                                    <input type="hidden" name="_template" value="table">
-                                    <input type="hidden" name="_next" value="https://franbenettini.github.io/telling-landing/">
-                                    <input type="hidden" name="_captcha" value="false">
-                                    <input class="col-6 telling-input" type="name" name="name" placeholder="Tu Nombre" id="nombre" required>
-                                    <input class="col-5 telling-input" type="email" name="email" placeholder="Tu Email" id="email" required>   
+                                    <input class="col-6 telling-input" type="name" name="name" placeholder="Tu Nombre" id="nombre">
+                                    <input class="col-5 telling-input" type="email" name="email" placeholder="Tu Email" id="email">   
                                 </div>
-                                <textarea class="telling-input col-12" type="text" name="text" placeholder="Mensaje " id="mensaje" required></textarea>
+                                <textarea class="telling-input col-12" type="text" name="text" placeholder="Mensaje " id="mensaje"></textarea>
                             </div>
-                            <button onclick="sweet()" class="primary-button" value="Send">Enviar</button>
-                        </form>
+                            <button type="submit" class="primary-button" value="Send">Enviar</button>
+                        </form>  
                     </div>
+                    <div id="status" class="success">Succes</div>
                 </div>
             </div>
             <div class="item gradient-right">
@@ -353,23 +353,45 @@
             </div>
             <!--Derecha del Footer-->
             <div class="right-footer">
-                <form class="formulario-beta">
+                <form name="submit-to-google-sheet" id="googlesh" class="formulario-beta">
                     <div>
-                        <input class="telling-input-footer" type="email" placeholder="Ingresá tu Email" id="email">
+                        <input name="email" class="telling-input-footer" type="email" placeholder="Ingresá tu Email" id="googleEmail" required>
                     </div>
                     <div>
-                        <button class="primary-button-footer">Obtené tu early access</button>
+                        <button class="primary-button-footer" type="submit">Obtené tu early access</button>
                     </div>
-                </form>  
+                </form> 
             </div>
         </div>
     </footer>
 
-
+    
     <script src="js/bootstrap.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="js/sweetAlert.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw8FIYfYp04xVBElCM5O-OFkugZJJgV72uYWYmsImlrrEbQkMIaAORDZ2GRqF0bK2TiVw/exec'
+        const form = document.getElementById("googlesh");
+        let email = document.getElementById('googleEmail')
+        form.onsubmit = (e) => {
+            let formData = new FormData();
+            formData.append("email", email.value)
+            e.preventDefault();
+            if(email.value){
+                 fetch(scriptURL, { method: 'POST', body: formData})
+                .then(response => {
+                console.log('Success!', response);
+                email.value = "";
+                sweet("Muchas gracias por ser parte", "Pronto vas a recibir novedades sobre Telling");
+            })
+            .catch(error => console.error('Error!', error.message))
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/form.js"></script>
     <script src="js/animatescroll.js"></script>
     <script src="js/scrollbehavior.js"></script>
     <script src="js/scrolldown.js"></script>

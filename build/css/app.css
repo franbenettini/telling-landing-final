@@ -477,24 +477,35 @@ img {
   background-color: #E2EBF3;
 }
 
-@media (max-width: 700px) {
-  .swal-size {
-    width: 300px;
-    height: 200px;
-  }
-
-  .swal2-popup {
-    font-size: default;
-  }
-}
 .swal-size {
   width: 587px;
   height: 402px;
+  padding: 5rem;
+  border-bottom: solid 12px;
+  border-color: #1E8BE8;
 }
 
-.swal2-container {
-  background: #000000;
-  border-radius: 10px;
+@media (max-width: 750px) {
+  .swal-size {
+    width: 336px;
+    height: 432px;
+    padding: 2rem;
+  }
+}
+.swal2-popup {
+  font-size: 1.6rem !important;
+}
+
+.swal2-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  color: #2C3944;
+}
+
+.swal2-text {
+  font-size: 20px;
 }
 
 .item-cover {
@@ -1032,6 +1043,57 @@ img {
     width: 3rem;
   }
 }
+/* Metodo 1 Udemy
+.error{
+    background-color: rgb(185, 0, 0); 
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;   
+}
+
+.correcto{
+    background-color: rgb(74, 185, 0); 
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;   
+}
+
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}*/
+/* indu falta la base de datos
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}*/
 #function-images .card-container {
   padding: 2rem;
 }

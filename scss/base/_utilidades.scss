@@ -71,23 +71,41 @@
 
 //Sweet Alert 2
 
-@media (max-width: 700px) {
-    .swal-size{
-        width:300px;
-        height:200px;
-    }
-    .swal2-popup {
-        font-size: default;
-    }
-}
 
 .swal-size{
     width:587px;
     height:402px;
+    padding: 5rem;
+    border-bottom: solid 12px;
+    border-color: #1E8BE8;
 }
 
-.swal2-container{
-    background: #000000;
-    border-radius: 10px;
+@media (max-width: 750px) {
+    .swal-size {
+        width: 336px;
+        height: 432px;
+        padding: 2rem;
+  }
+  }
+
+
+.swal2-popup {
+    font-size: 1.6rem !important;
 }
+
+.swal2-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: #2C3944;
+}
+
+.swal2-text{
+    font-size: 20px;
+}
+
+
+
+
 

@@ -1,1 +1,57 @@
 @use 'base/variables' as v;
+/* Metodo 1 Udemy
+.error{
+    background-color: rgb(185, 0, 0); 
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;   
+}
+
+.correcto{
+    background-color: rgb(74, 185, 0); 
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;   
+}
+
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}*/
+
+
+/* indu falta la base de datos
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}*/  
+
+
+

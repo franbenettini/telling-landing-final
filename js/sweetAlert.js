@@ -1,14 +1,14 @@
 const { default: swal } = require("sweetalert2");
 
-function sweet(){
+function sweet(title, text){
     Swal.fire({
-        title: 'Recibimos tu mensaje',
-        text: "Encontrá a tus escritores favoritos, apoyalos con una suscripción a su perfil y accedé a todo su contenido al instante.",
+        title: title,
+        text: text,
         showCancelButton:true,
         showConfirmButton:false,
         cancelButtonColor:'#1E8BE8',
         cancelButtonText:'Cerrar',
-        className: 'swal-size',
+        customClass: 'swal-size',
         showClass: {
           popup: 'animate__animated animate__fadeInUpBig'
         },
