@@ -5,7 +5,6 @@ $(window).scroll(function(){
 function scrollinparalax(){
     var windowwidth = $(window).width();
     var windowscroll = $(window).scrollTop();
-    console.log(windowscroll);
 
     if (windowwidth > 750){
         if (windowscroll  > 110){

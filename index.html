@@ -102,11 +102,11 @@
                         </div>-->
                             <!--End mc_embed_signup-->
                     <div class="form-index">
-                        <form class="form-index-phone" action="https://formsubmit.co/franbenettini@gmail.com" method="POST">
+                        <form class="form-index-phone" method="POST" id="formTop">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_next" value="">
-                            <input class="telling-input" type="email" name="email" placeholder="Ingresá tu Email" id="email">
-                            <button class="primary-button">Obtené tu early access</button>
+                            <input class="telling-input" type="email" id="emailTop" name="email" placeholder="Ingresá tu Email" id="email">
+                            <button class="primary-button"  onclick="getField('emailTop')" type=""submit">Obtené tu early access</button>
                         </form>
                     </div>
                     <div class="partners">
@@ -204,9 +204,9 @@
             </div>  
         </div>
         <div class="form-index center">
-            <form class="form-index-phone" action="https://formsubmit.co/franbenettini@gmail.com" method="POST">
-                <input class="telling-input" type="email" name="email" placeholder="Ingresá tu Email" id="email">
-                <button class="primary-button">Obtené tu early access</button>
+            <form class="form-index-phone" method="POST" id="formMid">
+                <input class="telling-input" type="email" id="emailMid" name="email" placeholder="Ingresá tu Email" id="email">
+                <button class="primary-button" type="submit"  onclick="getField('emailMid')">Obtené tu early access</button>
             </form>
         </div>
     </section>
@@ -353,12 +353,12 @@
             </div>
             <!--Derecha del Footer-->
             <div class="right-footer">
-                <form name="submit-to-google-sheet" id="googlesh" class="formulario-beta">
+                <form name="submit-to-google-sheet" id="formBottom" class="formulario-beta">
                     <div>
-                        <input name="email" class="telling-input-footer" type="email" placeholder="Ingresá tu Email" id="googleEmail" required>
+                        <input name="email" id="emailBottom" class="telling-input-footer" type="email" placeholder="Ingresá tu Email" id="googleEmail" required>
                     </div>
                     <div>
-                        <button class="primary-button-footer" type="submit">Obtené tu early access</button>
+                        <button class="primary-button-footer" onclick="getField('emailBottom')" type="submit">Obtené tu early access</button>
                     </div>
                 </form> 
             </div>
@@ -372,10 +372,44 @@
     <script src="js/sweetAlert.js"></script>
 
     <script>
+        let email;
+        function getField(fieldSelected){
+            email = document.getElementById(fieldSelected);
+        }
+        const formB = document.getElementById('formBottom');
+        const formM = document.getElementById('formMid');
+        const formT = document.getElementById('formTop');
+
         const scriptURL = 'https://script.google.com/macros/s/AKfycbw8FIYfYp04xVBElCM5O-OFkugZJJgV72uYWYmsImlrrEbQkMIaAORDZ2GRqF0bK2TiVw/exec'
-        const form = document.getElementById("googlesh");
-        let email = document.getElementById('googleEmail')
-        form.onsubmit = (e) => {
+        formB.onsubmit = (e) => {
+            let formData = new FormData();
+            formData.append("email", email.value)
+            e.preventDefault();
+            if(email.value){
+                 fetch(scriptURL, { method: 'POST', body: formData})
+                .then(response => {
+                console.log('Success!', response);
+                email.value = "";
+                sweet("Muchas gracias por ser parte", "Pronto vas a recibir novedades sobre Telling");
+            })
+            .catch(error => console.error('Error!', error.message))
+            }
+        }
+        formM.onsubmit = (e) => {
+            let formData = new FormData();
+            formData.append("email", email.value)
+            e.preventDefault();
+            if(email.value){
+                 fetch(scriptURL, { method: 'POST', body: formData})
+                .then(response => {
+                console.log('Success!', response);
+                email.value = "";
+                sweet("Muchas gracias por ser parte", "Pronto vas a recibir novedades sobre Telling");
+            })
+            .catch(error => console.error('Error!', error.message))
+            }
+        }
+        formT.onsubmit = (e) => {
             let formData = new FormData();
             formData.append("email", email.value)
             e.preventDefault();
