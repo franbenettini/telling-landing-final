@@ -7,8 +7,15 @@ function sweet(title, text){
         showCancelButton:true,
         showConfirmButton:false,
         cancelButtonColor:'#1E8BE8',
+        position: 'bottom',
+        customClass: {
+          popup: 'swal-size',
+          cancelButton: 'cancel-button',
+          container: 'alert-container',
+        },
+        //border: ,
+        //footer: '<span class="swal-footer">No te enviaremos ningun email no deseado</span>',
         cancelButtonText:'Cerrar',
-        customClass: 'swal-size',
         showClass: {
           popup: 'animate__animated animate__fadeInUpBig'
         },

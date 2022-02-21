@@ -73,21 +73,55 @@
 
 
 .swal-size{
-    width:587px;
-    height:402px;
-    padding: 5rem;
-    border-bottom: solid 12px;
-    border-color: #1E8BE8;
+    width:587px !important;
+    height:402px !important;
+    padding: 5rem !important;
+    border-bottom: solid 12px !important;
+    border-color: #1E8BE8 !important;
+    border-radius: 10px !important;
+    margin-bottom: 30vh;
 }
 
 @media (max-width: 750px) {
     .swal-size {
-        width: 336px;
-        height: 432px;
-        padding: 2rem;
+        width: 100% !important;
+        height: 432px !important;
+        padding: 2rem !important;
+        margin-bottom: 0vh;
+        border-radius: 20px 20px 0px 0px !important;
+            
   }
+    .cancel-button {
+        width: 100px !important;
+    }
+    
 }
 
+.cancel-button {
+    border-radius: 30px !important;
+    border: solid 0px !important;
+    padding: 15px !important;
+    width: 150px !important;
+
+    font-family: v.$fuenteParrafos2;
+    
+}
+
+.alert-container {
+    padding: 0px !important;
+    margin: 0px !important;
+    max-height: 100vh;
+
+    //display: flex !important;
+    //justify-content: center !important;
+    //align-items: center !important;
+}
+
+// Para modificar propiedades de la animacion del modal
+
+.animate__animated .animate__fadeInUpBig {
+    --animate-delay: 0s;
+}
 
 .swal2-popup {
     font-size: 1.6rem !important;
@@ -104,6 +138,7 @@
 .swal2-text{
     font-size: 20px;
 }
+
 
 
 
