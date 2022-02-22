@@ -13,8 +13,6 @@ function sweet(title, text){
           cancelButton: 'cancel-button',
           container: 'alert-container',
         },
-        //border: ,
-        //footer: '<span class="swal-footer">No te enviaremos ningun email no deseado</span>',
         cancelButtonText:'Cerrar',
         showClass: {
           popup: 'animate__animated animate__fadeInUpBig'
