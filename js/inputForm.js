@@ -15,8 +15,8 @@ formC.onsubmit = (e) => {
         .then(response => {
         console.log('Success!', response);
         mail.value = "";
-        CompleteName.value="";
-        text.value="";
+        nombre.value = "";
+        mensaje.value = "";
         sweet("Recibimos tu mensaje", "Pronto vas a recibir novedades sobre Telling");
     })
     .catch(error => console.error('Error!', error.message))
