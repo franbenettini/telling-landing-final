@@ -17,7 +17,7 @@ formC.onsubmit = (e) => {
         mail.value = "";
         nombre.value = "";
         mensaje.value = "";
-        sweet("Recibimos tu mensaje", "Pronto vas a recibir novedades sobre Telling");
+        sweet("Ya recibimos tu mensaje", "Intentaremos responder tu consulta cuanto antes, mientras tanto podés buscar más información sobre nosotros en Instagram y Facebook.");
     })
     .catch(error => console.error('Error!', error.message))
     }
