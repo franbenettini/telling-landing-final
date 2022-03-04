@@ -11,7 +11,7 @@ Ingresar al sitio web con el siguiente link: http://telling.com.ar
 * [Bootstrap](https://getbootstrap.com) - El framework web usado
 * [NPM](https://www.npmjs.com) - Manejador de dependencias
 * [SASS](https://sass-lang.com) - Procesador CSS
-* 
+* [JS]  - Lenguaje utilizado para funcionalidades
 
 ## Autores ✒️
 
