@@ -10,6 +10,10 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
+//Minificar
+const uglify = require('gulp-uglify');
+const pump = require('pump');
+
 function css ( done ){
     src('scss/**/*.scss') // Identificar el archivo .SASS a compilar
         .pipe( plumber())
@@ -57,6 +61,7 @@ function dev ( done ){
     watch('scss/**/*.scss', css);
     done();
 }
+
 
 exports.css = css;
 exports.imagenes = imagenes;
