@@ -31,6 +31,21 @@
     text-align: center;
 }
 
+
+@media screen and (min-width: 500px) and (max-width: 636px){
+
+    .contenido {
+        margin: 0 5rem;
+
+        span {
+            font-size: 4rem;
+            line-height: 0rem;
+        }
+    }
+
+}
+
+
 @media (max-width: 499px) {
 
     .contenido {
@@ -38,8 +53,7 @@
 
         span {
             font-size: 2.4rem;
-            line-height: 0.1rem;
+            line-height: 0rem;
         }
     }
-
 }

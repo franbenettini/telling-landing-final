@@ -72,3 +72,14 @@
         display: none;
     }
 }
+
+.navbar-nav{
+    margin-left: 2rem;
+    gap: 4rem;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px){
+    .navbar-nav{
+        gap: 2.5rem;
+    }
+}

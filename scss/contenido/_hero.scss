@@ -119,10 +119,6 @@
     .texto-index p{
         text-align: center;
     }
-    .form-index-phone{
-        display: flex;
-        justify-content: center;
-    }
     .partners{
         display: flex;
         justify-content: center;
@@ -139,7 +135,7 @@
     }
 }
 
-@media only screen and (max-width: 1400px) and (min-width: 1200px)  {
+@media only screen and (min-width: 1201px) and (max-width: 1400px)  {
     .texto-index h1{
         font-size: 3.9rem;
     }
@@ -148,13 +144,13 @@
     }
     .form-index-phone{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
 
         .telling-input{
             width: 100%;
-            margin-right: 0rem;
+            margin-right: 1rem;
         }
     }
 
@@ -182,12 +178,13 @@
     .form-index-phone{
 
         .telling-input{
-            width: 90%;
+            width: 80%;
             margin-right: 0rem;
             display: flex;
             align-items: left;
             justify-content: left;
         }
+
     }
 
     .gradient-left{
@@ -205,3 +202,35 @@
 
 }
 
+
+@media only screen and (min-width: 715px) and (max-width: 1200px){
+
+    .form-index-phone{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .primary-button{
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 714px){
+
+    .form-index-phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .primary-button{
+            margin-top: 1rem;
+        }
+
+        .telling-input{
+            width: 85%;
+        }
+    }
+}

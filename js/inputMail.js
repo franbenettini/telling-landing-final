@@ -16,7 +16,7 @@ let email;
                 .then(response => {
                 console.log('Success!', response);
                 email.value = "";
-                sweet("¡Ya formás parte de nuestra comunidad!", "Pronto recibirás un mail con toda la información necesaria para que nos mantengamos en contacto. Muchas gracias :)");
+                sweet("¡Gracias por formar parte de nuestra comunidad!", "Pronto recibirás un mail con toda la información necesaria para que nos mantengamos en contacto.");
             })
             .catch(error => console.error('Error!', error.message))
             }
@@ -30,7 +30,7 @@ let email;
                 .then(response => {
                 console.log('Success!', response);
                 email.value = "";
-                sweet("¡Ya formás parte de nuestra comunidad!", "Pronto recibirás un mail con toda la información necesaria para que nos mantengamos en contacto. Muchas gracias :)");
+                sweet("¡Gracias por formar parte de nuestra comunidad!", "Pronto recibirás un mail con toda la información necesaria para que nos mantengamos en contacto.");
             })
             .catch(error => console.error('Error!', error.message))
             }
@@ -44,7 +44,7 @@ let email;
                 .then(response => {
                 console.log('Success!', response);
                 email.value = "";
-                sweet("¡Ya formás parte de nuestra comunidad!", "Pronto recibirás un mail con toda la información necesaria para que nos mantengamos en contacto. Muchas gracias :)");
+                sweet("¡Gracias por formar parte de nuestra comunidad!", "Pronto recibirás un mail con toda la información necesaria para que nos mantengamos en contacto.");
             })
             .catch(error => console.error('Error!', error.message))
             }
